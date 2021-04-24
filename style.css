@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body {
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #6c7ade  0%, #16cd79 100%);
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -28,13 +28,13 @@
     background: white;
   }
   form button {
-    color: #ff6f47;
+    color: #6c7ade;
     background: #f7fffe;
     cursor: pointer;
     transition: all 0.3s ease;
   }
   form button:hover {
-    background: #ff6f47;
+    background: #6c7ade;
     color: white;
   }
   .todo-container {
@@ -67,7 +67,7 @@
   
   .trash-btn,
   .complete-btn {
-    background: #ff6f47;
+    background: #16cd79;
     color: white;
     border: none;
     padding: 1rem;
@@ -75,7 +75,7 @@
     font-size: 1rem;
   }
   .complete-btn {
-    background: rgb(11, 212, 162);
+    background: #6c7ade;
   }
   .todo-item {
     padding: 0rem 0.5rem;
@@ -131,9 +131,25 @@
     cursor: pointer;
     pointer-events: none;
   }
-  /* Transition */
-  /*
-  .select:hover::after {
-    transform: scale(1.5);
+  .social{
+    position: absolute;
+    bottom: 50px;
+    margin: 20px;
+    padding: 10px;
+}
+.linkedin a, .github a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+ 
+ @media only screen and (max-width: 700px) {
+  form {
+     flex-direction: column;
   }
-  */
+} 
+@media only screen and (max-width: 500px) {
+  .first .todo-input{
+    width: 220px;
+  }
+} 
